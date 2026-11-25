@@ -1,0 +1,26 @@
+.locations {
+    display: flex;
+    flex-direction: row;
+
+}
+.locations .location{
+    background-color: gainsboro;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 35px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+
+}
+
+.locations .location.active {
+    background-color: rgb(16, 148, 44);
+}
+
+.locations .location.active:hover {
+    background-color: green;
+}
+
+.locations .location:hover {
+    background-color: #aaa;
+}

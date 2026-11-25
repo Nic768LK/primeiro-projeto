@@ -1,0 +1,19 @@
+<p>Angular SLA</p>
+
+<div>
+    <label for="caixaPai">Digite o texto que vai pro componente filho:</label>
+    <input type="text" id="caixaPai" #caixaPai>
+
+    <button (click)="textoVaiProFilho = caixaPai.value">Enviar pro Filho</button>
+</div>
+<br>
+<div>
+    <input type="text">
+</div>
+
+<app-filho-a [texto]="textoVaiProFilho" (textoPreenchido)="textoVeioDoFilho = $event"></app-filho-a>
+<app-filho-b></app-filho-b>
+
+<p *ngIf="textoVeioDoFilho">
+    Esse texto veio do Filho: {{ textoVeioDoFilho}}
+</p>

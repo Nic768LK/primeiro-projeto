@@ -1,0 +1,28 @@
+:host {
+    border: 1px solid black;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+
+}
+
+nav {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 15px 0;
+    border-radius: 45px;
+    
+}
+
+nav a.active {
+    font-weight: 700;
+    background-color: blanchedalmond;
+}

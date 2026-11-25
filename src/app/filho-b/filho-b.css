@@ -1,0 +1,9 @@
+* {
+    color: chartreuse;
+}
+
+:host {
+    border: 1px solid chartreuse;
+    display: inline-block;
+    padding: 15px;
+}
