@@ -28,7 +28,7 @@ export class Directives {
   ];
 
   aplicarEstilos(){
-    
+    this.aplicarEstiloVerde = !this.aplicarEstiloVerde;
   }
 
   alterarParaMaiusculo($event: string){
